@@ -3,7 +3,7 @@ BINDIR = bin
 SRCDIR = src
 
 CC = gcc
-CFLAGS = -fno-stack-protector -no-pie
+CFLAGS = -fno-stack-protector -no-pie -g
 
 SRCS = $(wildcard $(SRCDIR)/*.c)
 
