@@ -70,13 +70,14 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 Breakpoint 1, main () at src/main.c:10
 10	  puts("Enter password:");
 ```
+
 ```
 (gdb) disassemble 
 Dump of assembler code for function main:
-   0x0000000000401196 <+0>:	    endbr64 
-   0x000000000040119a <+4>:	    push   %rbp
-   0x000000000040119b <+5>:	    mov    %rsp,%rbp
-   0x000000000040119e <+8>:	    sub    $0x10,%rsp
+   0x0000000000401196 <+0>:	endbr64 
+   0x000000000040119a <+4>:	push   %rbp
+   0x000000000040119b <+5>:	mov    %rsp,%rbp
+   0x000000000040119e <+8>:	sub    $0x10,%rsp
 => 0x00000000004011a2 <+12>:	lea    0xe5b(%rip),%rax        # 0x402004
    0x00000000004011a9 <+19>:	mov    %rax,%rdi
    0x00000000004011ac <+22>:	call   0x401070 <puts@plt>
