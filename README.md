@@ -131,6 +131,7 @@ int IsPassOk(void) {
 alexey@alexey-HVY-WXX9:~/Projects/Eltex/HW/functions/bin$ ./password_checker < password.bin 
 Enter password:
 Access granted!
+Segmentation fault (core dumped)
 ```
 
 ![Результат](/result.png)
